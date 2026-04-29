@@ -1,10 +1,10 @@
-# 🚲 Vélib Real-Time Data Pipeline & ML Forecaster
+# Vélib Real-Time Data Pipeline & ML Forecaster
 
 [![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)](https://azure.microsoft.com/)
 [![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)](https://databricks.com/)
 [![Apache Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)](https://spark.apache.org/)
 
-## 📝 Project Overview
+##  Project Overview
 This project implements an end-to-end **Cloud Data Lakehouse** using the **Medallion Architecture**. It ingests real-time bike-sharing data from the Paris Vélib API, processes it through Bronze, Silver, and Gold layers, and concludes with a Machine Learning model to predict bike availability.
 
 ### Key Features:
@@ -15,7 +15,7 @@ This project implements an end-to-end **Cloud Data Lakehouse** using the **Medal
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 The pipeline follows the industry-standard Medallion layers:
 
 
@@ -27,7 +27,7 @@ The pipeline follows the industry-standard Medallion layers:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 * **Orchestration:** Azure Databricks, Azure Data Factory (planned).
 * **Storage:** Azure Data Lake Storage Gen2 (ADLS), Delta Lake.
 * **Processing:** PySpark (Spark SQL & MLlib), Pandas.
@@ -35,7 +35,7 @@ The pipeline follows the industry-standard Medallion layers:
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 * Azure Subscription with a Databricks Workspace.
@@ -54,7 +54,7 @@ The pipeline follows the industry-standard Medallion layers:
 
 ---
 
-## 📊 Model Performance
+##  Model Performance
 The Machine Learning model utilizes `capacity`, `hour`, and `day_of_week` as features.
 
 * **Algorithm:** Linear Regression
@@ -64,7 +64,7 @@ The Machine Learning model utilizes `capacity`, `hour`, and `day_of_week` as fea
 
 ---
 
-## 📈 Future Roadmap (Data Factory Integration)
+##  Future Roadmap (Data Factory Integration)
 To move this into a production environment, the following "Data Factory" standards are planned:
 * **CI/CD:** Automating notebook deployments via GitHub Actions.
 * **Monitoring:** Integrating Azure Monitor to alert on pipeline failures.
@@ -72,7 +72,7 @@ To move this into a production environment, the following "Data Factory" standar
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 ```text
 ├── notebooks/
 │   ├── 01_Ingestion_Bronze.py  # API to Delta
