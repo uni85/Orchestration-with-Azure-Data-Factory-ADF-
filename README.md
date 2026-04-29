@@ -18,18 +18,18 @@ This project implements an end-to-end **Cloud Data Lakehouse** using the **Medal
 ##  Architecture
 The pipeline follows the industry-standard Medallion layers:
 
-![Workflow DAG](DAG.png)
+![Workflow DAG](docs/DAG.png)
 
 ##  Business Insights
 The Gold layer provides actionable insights into bike availability trends across the network.
 
-![Data Dashboard](dashboard.png)
+![Data Dashboard](docs/dashboard.png)
 
 ##  Infrastructure
 * **Compute:** Single-node cluster, 16GB Memory, 4 Cores.
 * **Runtime:** Databricks Runtime 17.3 (Spark 3.5.0).
 
-![Compute Config](compution.png)
+![Compute Config](docs/compution.png)
 
 1.  **Bronze (Raw):** Append-only landing zone for raw JSON API responses. Includes `ingestion_time` for historical tracking.
 2.  **Silver (Cleaned):** Data is flattened (nested coordinates extracted), type-casted, and filtered for quality (null removal).
