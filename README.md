@@ -1,4 +1,4 @@
-# Vélib Real-Time Data Pipeline & ML Forecaster
+# Vélib Real-Time Data Pipeline & ML Forecaster 
 
 [![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)](https://azure.microsoft.com/)
 [![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)](https://databricks.com/)
